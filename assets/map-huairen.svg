@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="怀仁市示意地图">
+  <defs>
+    <linearGradient id="mMontain" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3d4d3c"/>
+      <stop offset="1" stop-color="#5d7356"/>
+    </linearGradient>
+    <linearGradient id="mWater" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#677f96"/>
+      <stop offset="1" stop-color="#8aa7bd"/>
+    </linearGradient>
+    <pattern id="mGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#d6cbb0" stroke-width="0.5" opacity="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- base -->
+  <rect width="800" height="600" fill="#f3eddf"/>
+  <rect width="800" height="600" fill="url(#mGrid)"/>
+
+  <!-- mountains (north & south) -->
+  <path d="M0 90 L70 40 L150 120 L230 55 L330 110 L420 70 L520 125 L620 75 L720 115 L800 85 L800 200 L0 200 Z" fill="url(#mMontain)" opacity="0.85"/>
+  <path d="M0 470 L100 420 L200 460 L330 415 L450 465 L580 420 L700 460 L800 430 L800 600 L0 600 Z" fill="url(#mMontain)" opacity="0.75"/>
+
+  <!-- Sanggan river -->
+  <path d="M60 330 C 180 310, 300 355, 430 330 C 560 305, 680 345, 780 320" fill="none" stroke="url(#mWater)" stroke-width="14" stroke-linecap="round" opacity="0.75"/>
+  <path d="M60 330 C 180 310, 300 355, 430 330 C 560 305, 680 345, 780 320" fill="none" stroke="#a9c3d6" stroke-width="2" opacity="0.5"/>
+  <text x="150" y="345" font-family="Noto Serif SC, SimSun, serif" font-size="14" fill="#50708a">桑干河</text>
+
+  <!-- main plain area city -->
+  <circle cx="400" cy="285" r="16" fill="#2b2118"/>
+  <circle cx="400" cy="285" r="30" fill="none" stroke="#2b2118" stroke-width="1.5" opacity="0.35"/>
+
+  <!-- spots -->
+  <!-- 鹅毛口遗址 -->
+  <g class="map-point" data-map-point data-map-name="鹅毛口古石器遗址" data-map-desc="史前石器制造场，新石器文明发源地">
+    <circle class="pulse" cx="215" cy="205" r="8" fill="#a63c2b" opacity="0.35"/>
+    <circle cx="215" cy="205" r="6.5" fill="#a63c2b"/>
+  </g>
+  <!-- 金沙滩 -->
+  <g class="map-point" data-map-point data-map-name="金沙滩古战场" data-map-desc="宋辽古战场 · 杨家将故事发源">
+    <circle class="pulse" cx="545" cy="235" r="8" fill="#a63c2b" opacity="0.35"/>
+    <circle cx="545" cy="235" r="6" fill="#a63c2b"/>
+  </g>
+  <!-- 清凉山砖塔 -->
+  <g class="map-point" data-map-point data-map-name="清凉山辽代砖塔" data-map-desc="怀仁七塔之一 · 辽代砖塔">
+    <circle class="pulse" cx="330" cy="150" r="8" fill="#b8872c" opacity="0.35"/>
+    <circle cx="330" cy="150" r="6" fill="#b8872c"/>
+  </g>
+  <!-- 西安堡 -->
+  <g class="map-point" data-map-point data-map-name="西安堡" data-map-desc="明长城城堡 · 始建于1464年">
+    <circle class="pulse" cx="600" cy="350" r="8" fill="#b8872c" opacity="0.35"/>
+    <circle cx="600" cy="350" r="6" fill="#b8872c"/>
+  </g>
+  <!-- 吴家窑瓷窑 -->
+  <g class="map-point" data-map-point data-map-name="吴家窑古瓷窑遗址" data-map-desc="千年陶瓷历史见证">
+    <circle class="pulse" cx="470" cy="410" r="8" fill="#b8872c" opacity="0.35"/>
+    <circle cx="470" cy="410" r="6" fill="#b8872c"/>
+  </g>
+
+  <!-- lake -->
+  <ellipse cx="640" cy="460" rx="34" ry="18" fill="#8aa7bd" opacity="0.6"/>
+  <text x="640" y="500" font-family="Noto Serif SC, SimSun, serif" font-size="12" fill="#50708a" text-anchor="middle">湖泊 · 湿地</text>
+
+  <!-- labels -->
+  <text x="400" y="260" font-family="Noto Serif SC, SimSun, serif" font-size="16" fill="#2b2118" text-anchor="middle" font-weight="700">怀仁市区</text>
+  <text x="215" y="188" font-family="Noto Serif SC, SimSun, serif" font-size="12" fill="#6e6254" text-anchor="middle">鹅毛口</text>
+  <text x="545" y="262" font-family="Noto Serif SC, SimSun, serif" font-size="12" fill="#6e6254" text-anchor="middle">金沙滩</text>
+  <text x="330" y="132" font-family="Noto Serif SC, SimSun, serif" font-size="12" fill="#6e6254" text-anchor="middle">清凉山</text>
+  <text x="600" y="372" font-family="Noto Serif SC, SimSun, serif" font-size="12" fill="#6e6254" text-anchor="middle">西安堡</text>
+  <text x="470" y="432" font-family="Noto Serif SC, SimSun, serif" font-size="12" fill="#6e6254" text-anchor="middle">吴家窑</text>
+
+  <text x="400" y="575" font-family="Noto Serif SC, SimSun, serif" font-size="12" fill="#9a8c74" text-anchor="middle">本图为站点示意地图，正式上线后替换为GIS电子地图</text>
+</svg>

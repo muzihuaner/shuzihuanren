@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>互动交流 · 数字怀仁</title>
+<meta name="description" content="在线留言与投稿、怀仁文化论坛、知识问答——邀你共话怀仁。">
+<link rel="icon" href="assets/logo-seal.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <img class="brand-seal" src="assets/logo-seal.svg" alt="数字怀仁">
+      <span class="brand-text">
+        <span class="brand-title">数字怀仁</span><br>
+        <span class="brand-sub">懷仁 · HUAI REN</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="打开菜单"><span></span><span></span><span></span></button>
+    <nav class="nav">
+      <a href="index.html" data-page="index.html">首页</a>
+      <a href="zhixian.html" data-page="zhixian.html">县志文献</a>
+      <a href="dili.html" data-page="dili.html">地理风貌</a>
+      <a href="renwen.html" data-page="renwen.html">人文历史</a>
+      <a href="renwu.html" data-page="renwu.html">人物长廊</a>
+      <a href="yingxiang.html" data-page="yingxiang.html">影像怀仁</a>
+      <a href="ditu.html" data-page="ditu.html">数字地图</a>
+      <a class="nav-cta" href="hudong.html" data-page="hudong.html">交流反馈</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <img class="hero-art" src="assets/hero-ink.svg" alt="">
+  <div class="container" style="position:relative">
+    <p class="crumb"><a href="index.html">首页</a> / 互动交流</p>
+    <h1>互动交流</h1>
+    <p class="page-desc">乡情在此汇聚，历史在此补全。你的记忆与故事，是“数字怀仁”最珍贵的资料来源。</p>
+  </div>
+</section>
+
+<nav class="sub-nav" aria-label="互动交流子栏目">
+  <div class="sub-nav-inner">
+    <a href="#liuyan">在线留言与投稿</a>
+    <a href="#luntan">怀仁文化论坛</a>
+    <a href="#wenda">知识问答</a>
+  </div>
+</nav>
+
+<main>
+  <!-- 留言投稿 -->
+  <section id="liuyan" class="section">
+    <div class="container">
+      <div class="kv-grid">
+        <div data-reveal>
+          <span class="section-eyebrow">· 留言 ·</span>
+          <h2 class="section-title">在线留言与投稿</h2>
+          <p style="color:var(--ink-2)">欢迎投稿你手中的老照片、家谱、口述记忆或史料线索。凡投稿内容，站点均将标注来源并在核校后收录。留言将发送至本站邮箱，正式上线后将接入后端存储与审核。</p>
+          <div class="cards-grid cols-2" style="margin-top:20px">
+            <div class="info-card">
+              <div class="ic-num">01</div>
+              <h3>史料投稿</h3>
+              <p>古籍、族谱、老照片、地方志资料。</p>
+            </div>
+            <div class="info-card">
+              <div class="ic-num">02</div>
+              <h3>人物推荐</h3>
+              <p>当代人物、革命先贤、乡贤故事线索。</p>
+            </div>
+            <div class="info-card">
+              <div class="ic-num">03</div>
+              <h3>勘误指正</h3>
+              <p>发现内容有误？告诉我们以便及时修订。</p>
+            </div>
+            <div class="info-card">
+              <div class="ic-num">04</div>
+              <h3>意见建议</h3>
+              <p>对网站功能与体验的任何建议。</p>
+            </div>
+          </div>
+        </div>
+        <div data-reveal>
+          <div class="article">
+            <h3 style="font-size:20px">填写留言</h3>
+            <form data-mailto="admin@huangetech.com" novalidate>
+              <div class="field">
+                <label for="name">称呼</label>
+                <input id="name" name="name" type="text" placeholder="您的称呼" required>
+              </div>
+              <div class="field">
+                <label for="contact">联系方式</label>
+                <input id="contact" name="contact" type="text" placeholder="邮箱或电话（选填）">
+              </div>
+              <div class="field">
+                <label for="type">留言类型</label>
+                <select id="type" name="type">
+                  <option>史料投稿</option>
+                  <option>人物推荐</option>
+                  <option>勘误指正</option>
+                  <option>意见建议</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="content">内容</label>
+                <textarea id="content" name="content" rows="6" placeholder="请详细描述您的留言内容…" required></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit" style="width:100%;justify-content:center">提交留言</button>
+              <p class="form-note">提交后将调用您的邮件客户端，发送至 admin@huangetech.com</p>
+              <div class="form-success">邮件客户端已打开，请确认发送您的留言。</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 论坛 -->
+  <section id="luntan" class="section section-paper">
+    <div class="container">
+      <div class="article" data-reveal>
+        <span class="section-eyebrow">· 论坛 ·</span>
+        <h2 class="section-title">怀仁文化论坛</h2>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;margin-bottom:24px">
+          <span class="badge">乡情记忆</span>
+          <span class="badge">学术研究</span>
+          <span class="badge">寻根问祖</span>
+          <span class="badge">文旅推荐</span>
+          <span class="badge">陶瓷文化</span>
+        </div>
+        <a href="https://www.huairenbbs.com" target="_blank" class="btn btn-primary">访问怀仁文化论坛</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 知识问答 -->
+  <section id="wenda" class="section">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="section-eyebrow">· 问答 ·</span>
+        <h2 class="section-title">知识问答</h2>
+        <p class="section-sub">关于怀仁的常见疑问，一站解答。</p>
+      </div>
+      <div data-reveal>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">“怀仁”之名从何而来？<span class="faq-icon">＋</span></button>
+          <div class="faq-a"><p>辽太祖耶律阿保机与晋王李克用曾会于东城，有“怀想仁人”之语，辽兴宗重熙十三年（1044年）因此定县名为“怀仁”。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">怀仁何时撤县设市？<span class="faq-icon">＋</span></button>
+          <div class="faq-a"><p>2018年8月8日，经国务院批准，撤销怀仁县设立县级怀仁市，由朔州市代管。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">怀仁有哪些国家级非遗？<span class="faq-icon">＋</span></button>
+          <div class="faq-a"><p>春节（怀仁旺火习俗）于2011年列入第三批国家级非物质文化遗产名录，是怀仁最具代表性的国家级非遗项目。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">现存最早的怀仁县志是哪一部？<span class="faq-icon">＋</span></button>
+          <div class="faq-a"><p>现存最早为明代万历《怀仁县志》，始修于万历五年（1577年），由知县杨守介主持编纂，万历二十九年（1601年）由王植付梓成书。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">怀仁的地理位置有何特点？<span class="faq-icon">＋</span></button>
+          <div class="faq-a"><p>怀仁位于山西省北部、桑干河上游，地处雁门关外、大同盆地中部，是联结朔州、大同两市的重要节点城市，全市三分山、七分川。</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-about">
+        <img class="foot-seal" src="assets/logo-seal.svg" alt="数字怀仁">
+        <p>数字怀仁是一个以数字化手段展示怀仁市历史、地理、人文、人物等全方位信息的综合性文化网站。</p>
+      </div>
+      <div>
+        <h4>浏览</h4>
+        <ul>
+          <li><a href="zhixian.html">县志文献</a></li>
+          <li><a href="dili.html">地理风貌</a></li>
+          <li><a href="renwen.html">人文历史</a></li>
+          <li><a href="renwu.html">人物长廊</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>观览</h4>
+        <ul>
+          <li><a href="yingxiang.html">影像怀仁</a></li>
+          <li><a href="ditu.html">数字地图</a></li>
+          <li><a href="hudong.html">互动交流</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于</h4>
+        <ul>
+          <li><a href="index.html">站点首页</a></li>
+          <li><a href="hudong.html#liuyan">留言投稿</a></li>
+          <li><a href="ditu.html">古今对照</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+       © <span data-year>2026</span> 数字怀仁 Powered by <a href="https://huangetech.com">HuanGeTech</a> 传承地方文化 · 服务公众查阅 · 助力文旅发展 
+    </div>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="回到顶部">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>

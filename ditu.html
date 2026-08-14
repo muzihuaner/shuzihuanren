@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数字地图 · 数字怀仁</title>
+<meta name="description" content="怀仁市电子地图，标注主要景点与遗址位置，并提供历史地图古今对照。">
+<link rel="icon" href="assets/logo-seal.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .map-wrap { position: relative; }
+  .map-svg { background: #f3eddf; }
+  .city-swatch {
+    width: 16px; height: 16px; border-radius: 50%;
+    background: var(--ink); box-shadow: 0 0 0 3px rgba(43,33,24,.14);
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <img class="brand-seal" src="assets/logo-seal.svg" alt="数字怀仁">
+      <span class="brand-text">
+        <span class="brand-title">数字怀仁</span><br>
+        <span class="brand-sub">懷仁 · HUAI REN</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="打开菜单"><span></span><span></span><span></span></button>
+    <nav class="nav">
+      <a href="index.html" data-page="index.html">首页</a>
+      <a href="zhixian.html" data-page="zhixian.html">县志文献</a>
+      <a href="dili.html" data-page="dili.html">地理风貌</a>
+      <a href="renwen.html" data-page="renwen.html">人文历史</a>
+      <a href="renwu.html" data-page="renwu.html">人物长廊</a>
+      <a href="yingxiang.html" data-page="yingxiang.html">影像怀仁</a>
+      <a href="ditu.html" data-page="ditu.html">数字地图</a>
+      <a class="nav-cta" href="hudong.html" data-page="hudong.html">交流反馈</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <img class="hero-art" src="assets/hero-ink.svg" alt="">
+  <div class="container" style="position:relative">
+    <p class="crumb"><a href="index.html">首页</a> / 数字地图</p>
+    <h1>数字地图</h1>
+    <p class="page-desc">在山水之间寻访遗址与名胜，感受怀仁的岁月变迁。</p>
+  </div>
+</section>
+
+<main>
+  <!-- 电子地图 -->
+  <section class="section">
+    <div class="container">
+      <span class="section-eyebrow" data-reveal>· 电子地图 ·</span>
+      <h2 class="section-title" data-reveal>怀仁 · 电子地图</h2>
+      <div class="map-shell" data-reveal>
+        <div class="map-legend">
+          <span class="lg-item">百度地图 · 怀仁市</span>
+          <span style="margin-left:auto;color:var(--ink-3)">可拖拽缩放查看</span>
+        </div>
+        <div class="map-wrap">
+          <iframe class="map-frame" src="https://map.baidu.com/@12583854.7243766,4808158.64,11.09z?width=100%&height=480&text=!3m1!1e3!4b1!4d113.100000!4e39.830000!5m1!1e1&src=6" allowfullscreen loading="lazy" title="怀仁市百度地图"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 360全景 -->
+  <section class="section section-paper">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="section-eyebrow">· 360 全景 ·</span>
+        <h2 class="section-title">怀仁 · 全景漫游</h2>
+        <p class="section-sub">以 720 度全景视角漫游怀仁，点击场景可全屏沉浸浏览。</p>
+      </div>
+      <div class="kv-grid">
+        <div class="map-shell" data-reveal>
+          <div class="map-legend"><span class="lg-item" style="color:var(--vermilion)">全景 1</span></div>
+          <div class="pano-wrap">
+            <iframe class="pano-frame" src="https://www.720yun.com/t/9e92dqa5myw" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" msallowfullscreen="true" loading="lazy" title="怀仁全景漫游 1"></iframe>
+          </div>
+        </div>
+        <div class="map-shell" data-reveal>
+          <div class="map-legend"><span class="lg-item" style="color:var(--vermilion)">全景 2</span></div>
+          <div class="pano-wrap">
+            <iframe class="pano-frame" src="https://www.720yun.com/t/d3d2bqa6als" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" msallowfullscreen="true" loading="lazy" title="怀仁全景漫游 2"></iframe>
+          </div>
+        </div>
+        <div class="map-shell" data-reveal>
+          <div class="map-legend"><span class="lg-item" style="color:var(--vermilion)">全景 3</span></div>
+          <div class="pano-wrap">
+            <iframe class="pano-frame" src="https://www.720yun.com/t/c1f2eczguca" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" msallowfullscreen="true" loading="lazy" title="怀仁全景漫游 3"></iframe>
+          </div>
+        </div>
+        <div class="map-shell" data-reveal>
+          <div class="map-legend"><span class="lg-item" style="color:var(--vermilion)">全景 4</span></div>
+          <div class="pano-wrap">
+            <iframe class="pano-frame" src="https://www.720yun.com/t/13c23ca8ytf" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" msallowfullscreen="true" loading="lazy" title="怀仁全景漫游 4"></iframe>
+          </div>
+        </div>
+        <div class="map-shell" data-reveal>
+          <div class="map-legend"><span class="lg-item" style="color:var(--vermilion)">全景 5</span></div>
+          <div class="pano-wrap">
+            <iframe class="pano-frame" src="https://www.720yun.com/t/d71jezkneu3" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" msallowfullscreen="true" loading="lazy" title="怀仁全景漫游 5"></iframe>
+          </div>
+        </div>
+        <div class="map-shell" data-reveal>
+          <div class="map-legend"><span class="lg-item" style="color:var(--vermilion)">全景 6</span></div>
+          <div class="pano-wrap">
+            <iframe class="pano-frame" src="https://www.720yun.com/vr/f35j50tn5n8" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" msallowfullscreen="true" loading="lazy" title="怀仁全景漫游 6"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-about">
+        <img class="foot-seal" src="assets/logo-seal.svg" alt="数字怀仁">
+        <p>数字怀仁是一个以数字化手段展示怀仁市历史、地理、人文、人物等全方位信息的综合性文化网站。</p>
+      </div>
+      <div>
+        <h4>浏览</h4>
+        <ul>
+          <li><a href="zhixian.html">县志文献</a></li>
+          <li><a href="dili.html">地理风貌</a></li>
+          <li><a href="renwen.html">人文历史</a></li>
+          <li><a href="renwu.html">人物长廊</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>观览</h4>
+        <ul>
+          <li><a href="yingxiang.html">影像怀仁</a></li>
+          <li><a href="ditu.html">数字地图</a></li>
+          <li><a href="hudong.html">互动交流</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于</h4>
+        <ul>
+          <li><a href="index.html">站点首页</a></li>
+          <li><a href="hudong.html#liuyan">留言投稿</a></li>
+          <li><a href="ditu.html">古今对照</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+       © <span data-year>2026</span> 数字怀仁 Powered by <a href="https://huangetech.com">HuanGeTech</a> 传承地方文化 · 服务公众查阅 · 助力文旅发展 
+    </div>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="回到顶部">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>

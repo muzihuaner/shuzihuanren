@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 560" preserveAspectRatio="xMidYMax slice" role="img" aria-label="">
+  <defs>
+    <linearGradient id="inkBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#241c13"/>
+      <stop offset="1" stop-color="#3a2c1c"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="0.82" cy="0.2" r="0.35">
+      <stop offset="0" stop-color="#f2e3bd" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#f2e3bd" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1440" height="560" fill="url(#inkBg)"/>
+  <rect width="1440" height="560" fill="url(#moonGlow)"/>
+  <circle cx="1180" cy="120" r="30" fill="#f2e3bd" opacity="0.85"/>
+  <circle cx="1180" cy="120" r="44" fill="none" stroke="#f2e3bd" stroke-width="1" opacity="0.35"/>
+
+  <!-- far mountains -->
+  <path d="M0 330 L120 268 L210 320 L330 240 L430 312 L540 252 L650 320 L760 246 L880 308 L1000 250 L1120 316 L1240 260 L1350 318 L1440 280 L1440 560 L0 560 Z"
+        fill="#1f1810" opacity="0.85"/>
+  <path d="M0 380 L150 316 L270 372 L410 300 L540 366 L680 308 L820 368 L960 314 L1100 376 L1240 322 L1380 372 L1440 344 L1440 560 L0 560 Z"
+        fill="#160f09" opacity="0.9"/>
+  <path d="M0 440 L120 402 L240 448 L360 404 L500 452 L640 410 L800 456 L940 414 L1080 460 L1220 418 L1360 462 L1440 434 L1440 560 L0 560 Z"
+        fill="#0d0806"/>
+  <!-- ground -->
+  <path d="M0 520 Q360 470 720 500 T1440 505 L1440 560 L0 560 Z" fill="#060404" opacity="0.8"/>
+  <!-- pines -->
+  <g fill="#040302" opacity="0.9">
+    <path d="M180 470 L196 418 L206 470 Z"/><path d="M198 474 L216 428 L226 477 Z"/>
+    <path d="M620 488 L636 436 L648 490 Z"/><path d="M640 492 L660 448 L670 494 Z"/>
+    <path d="M980 480 L998 428 L1008 482 Z"/><path d="M1000 484 L1020 444 L1030 486 Z"/>
+  </g>
+</svg>
