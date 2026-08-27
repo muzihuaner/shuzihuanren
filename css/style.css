@@ -731,6 +731,17 @@ body.menu-open .nav-toggle span:nth-child(3) {
   line-height: 1;
 }
 
+.spot-banner.yang::after {
+  content: "羊";
+  position: absolute;
+  right: -20px;
+  bottom: -60px;
+  font-family: var(--font-serif);
+  font-size: 260px;
+  color: rgba(255, 255, 255, 0.08);
+  line-height: 1;
+}
+
 .spot-banner .tag {
   font-family: var(--font-serif);
   letter-spacing: 0.3em;
