@@ -48,12 +48,51 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/viewerjs/1.11.5/viewer.min.css">
 <style>
   .map-wrap { position: relative; }
   .map-svg { background: #f3eddf; }
   .city-swatch {
     width: 16px; height: 16px; border-radius: 50%;
     background: var(--ink); box-shadow: 0 0 0 3px rgba(43,33,24,.14);
+  }
+  .oldmap-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-3, 1.5rem);
+  }
+  .oldmap-card {
+    background: var(--paper-2, #f8f4ec);
+    border-radius: var(--radius-md, 12px);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm, 0 2px 8px rgba(0,0,0,.08));
+    transition: box-shadow .3s, transform .3s;
+  }
+  .oldmap-card:hover {
+    box-shadow: var(--shadow-lg, 0 8px 24px rgba(0,0,0,.12));
+    transform: translateY(-4px);
+  }
+  .oldmap-card img {
+    width: 100%;
+    display: block;
+    cursor: zoom-in;
+    min-height: 200px;
+    object-fit: cover;
+    background: var(--paper-dark, #ece5d5);
+  }
+  .oldmap-card .oldmap-caption {
+    padding: .75rem 1rem;
+    font-family: var(--font-serif, 'Noto Serif SC', serif);
+    font-size: .95rem;
+    color: var(--ink, #2b2118);
+    text-align: center;
+    border-top: 1px solid rgba(43,33,24,.08);
+  }
+  @media (max-width: 768px) {
+    .oldmap-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 480px) {
+    .oldmap-grid { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -157,6 +196,25 @@
       </div>
     </div>
   </section>
+
+  <!-- 历史地图 -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="section-eyebrow">· 历史地图 ·</span>
+        <h2 class="section-title">怀仁 · 历史地图</h2>
+        <p class="section-sub">点击图片可放大查看细节，支持拖拽与滚轮缩放。</p>
+      </div>
+      <div class="oldmap-grid" id="oldmap-grid" data-reveal>
+        <div class="oldmap-card"><img src="img/oldmap/0.png" alt="历史地图 1"><div class="oldmap-caption">1972 县域地图</div></div>
+        <div class="oldmap-card"><img src="img/oldmap/1.png" alt="历史地图 2"><div class="oldmap-caption">1994 县域地图</div></div>
+        <div class="oldmap-card"><img src="img/oldmap/2.png" alt="历史地图 3"><div class="oldmap-caption">2002 县域地图</div></div>
+        <div class="oldmap-card"><img src="img/oldmap/3.png" alt="历史地图 4"><div class="oldmap-caption">2008 县域地图</div></div>
+        <div class="oldmap-card"><img src="img/oldmap/4.png" alt="历史地图 5"><div class="oldmap-caption">1994 城区地图</div></div>
+        <div class="oldmap-card"><img src="img/oldmap/5.png" alt="历史地图 6"><div class="oldmap-caption">2008 城区地图</div></div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="site-footer">
@@ -203,5 +261,23 @@
 </button>
 
 <script src="js/main.js"></script>
+<script src="https://cdnjs.loli.net/ajax/libs/viewerjs/1.11.5/viewer.min.js"></script>
+<script>
+  (function () {
+    var grid = document.getElementById('oldmap-grid');
+    if (grid) {
+      new Viewer(grid, {
+        toolbar: true,
+        navbar: 1,
+        title: false,
+        tooltip: true,
+        zoomable: true,
+        scalable: true,
+        rotatable: true,
+        transition: true
+      });
+    }
+  })();
+</script>
 </body>
 </html>
